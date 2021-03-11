@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">{{spellObtained.name}}</ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="closeModal()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-label>Description:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.desc}}
+      </p>
+    </ion-item>
+    
+    <ion-label>Range:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.range}}
+      </p>
+    </ion-item>
+
+    
+    <ion-label>Components:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.components}}
+      </p>
+    </ion-item>
+
+    <ion-label>Ritual:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.ritual}}
+      </p>
+    </ion-item>
+
+    <ion-label>Duration:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.duration}}
+      </p>
+    </ion-item>
+
+    <ion-label>Concentration:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.concentration}}
+      </p>
+    </ion-item>
+
+    <ion-label>Casting Time:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.casting_time}}
+      </p>
+    </ion-item>
+
+    <ion-label>level:</ion-label>
+    <ion-item>
+      <p>
+        {{spellObtained.level}}
+      </p>
+    </ion-item>
+
+   <!-- <ion-label>School:</ion-label>
+    <ion-item *ngFor="let school2 of spellObtained.school">
+      <p>
+        {{school2}}
+      </p>
+    </ion-item> -->
+
+    <ion-label>Classes:</ion-label>
+    <ion-item *ngFor="let classes2 of spellObtained.classes">
+      <p>
+        {{classes2.name}}
+      </p>
+    </ion-item>
+
+    <ion-label>Subclasses:</ion-label>
+    <ion-item *ngFor="let subclasses2 of spellObtained.subclasses">
+      <p>
+        {{subclasses2.name}}
+      </p>
+    </ion-item>
+
+
+
+</ion-content>
